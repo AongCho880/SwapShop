@@ -1,0 +1,28 @@
+name: Feature request
+description: Suggest an idea or enhancement
+labels: ["type:feature", "status:triage"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: What problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: Bullet points for "done"
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - mobile
+        - server
+        - infra
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / links
